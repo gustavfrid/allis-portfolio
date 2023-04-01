@@ -1,17 +1,19 @@
 import Link from 'next/link'
 import styles from '@/styles/Menu.module.css'
 
+const
+
 export const Menu = ({ toggleMenu }: any) => {
   return (
     <ul className={styles.list}>
       <li>
-        <Link href='/exhibitions' onClick={toggleMenu}>
-          exhibitions
+        <Link href='/work' onClick={toggleMenu}>
+          work
         </Link>
       </li>
       <li>
-        <Link href='/artist-statement' onClick={toggleMenu}>
-          artist statement
+        <Link href='/about' onClick={toggleMenu}>
+          about
         </Link>
       </li>
       <li>

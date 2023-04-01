@@ -2,7 +2,7 @@ import Link from 'next/link'
 import styles from '../styles/Navbar.module.css'
 import { MenuIcon } from '@/images/MenuIcon'
 import { CloseMenuIcon } from '@/images/CloseMenuIcon'
-import { Menu } from './menu'
+import { Menu } from './Menu'
 import { useState } from 'react'
 
 export const Navbar = () => {

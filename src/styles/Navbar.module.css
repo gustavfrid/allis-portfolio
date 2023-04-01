@@ -18,3 +18,12 @@
 .menuIcon {
   z-index: 1000;
 }
+
+@media (min-width: 768px) {
+  .menuIcon {
+    display: none;
+  }
+  .navbar {
+    justify-content: center;
+  }
+}
