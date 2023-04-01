@@ -1,8 +1,6 @@
 import Link from 'next/link'
 import styles from '@/styles/Menu.module.css'
 
-const
-
 export const Menu = ({ toggleMenu }: any) => {
   return (
     <ul className={styles.list}>
