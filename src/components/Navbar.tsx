@@ -2,7 +2,7 @@ import Link from 'next/link'
 import styles from '../styles/Navbar.module.css'
 import { MenuIcon } from '@/images/MenuIcon'
 import { CloseMenuIcon } from '@/images/CloseMenuIcon'
-import { Menu } from './Menu'
+import { OverlayMenu } from './OverlayMenu'
 import { useState } from 'react'
 
 export const Navbar = () => {
@@ -20,7 +20,7 @@ export const Navbar = () => {
 
   return (
     <>
-      {isOpen && <Menu toggleMenu={toggleMenu} />}
+      {isOpen && <OverlayMenu toggleMenu={toggleMenu} />}
       <div className={styles.navbar}>
         <Link href='/' className={styles.title}>
           allis matei

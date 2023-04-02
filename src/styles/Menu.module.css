@@ -18,7 +18,8 @@
 
 .list > li > a {
   text-decoration: none;
-  font-size: large;
+  font-size: 2rem;
+  text-transform: capitalize;
   color: white;
 }
 

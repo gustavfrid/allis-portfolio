@@ -5,3 +5,17 @@
   align-items: center;
   height: 80vh;
 }
+
+.main > h1 {
+  text-transform: uppercase;
+}
+
+.main > p {
+  padding: 2rem;
+}
+
+.social {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
