@@ -1,8 +1,6 @@
 .sidebar {
   display: none;
-  /* width: 200px; */
-  /* height: 100vh; */
-  /* border-right: 1px solid black; */
+  background-color: rgb(255, 255, 255, 0.5);
   /* ↓ The width when the sidebar _is_ a sidebar */
   flex-basis: 15rem;
   flex-grow: 1;
@@ -24,7 +22,7 @@
 
 .list > li > a {
   text-decoration: none;
-  font-size: large;
+  font-size: 1.5rem;
   text-transform: capitalize;
 }
 
