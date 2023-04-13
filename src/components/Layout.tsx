@@ -1,5 +1,4 @@
 import { Navbar } from './Navbar'
-import { Sidebar } from './Sidebar'
 import styles from '@/styles/Layout.module.css'
 import bgImg from '@/images/background.jpg'
 
@@ -11,7 +10,6 @@ export const Layout = ({ children }: PropsWithChildren) => {
       <div className={styles.background} />
       <Navbar />
       <div className={styles.main}>
-        <Sidebar />
         <div className={styles.not_sidebar}>{children}</div>
       </div>
     </div>

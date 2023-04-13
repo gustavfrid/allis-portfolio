@@ -12,7 +12,7 @@
   min-inline-size: 50%;
 }
 
-@keyframes animatedBackground {
+/* @keyframes animatedBackground {
   0% {
     transform: rotate(0deg) translate(-165px) rotate(0deg);
   }
@@ -30,4 +30,4 @@
   top: -100vh;
   left: -50vw;
   animation: animatedBackground 500s linear infinite;
-}
+} */

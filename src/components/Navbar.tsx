@@ -4,6 +4,7 @@ import { MenuIcon } from '@/images/MenuIcon'
 import { CloseMenuIcon } from '@/images/CloseMenuIcon'
 import { OverlayMenu } from './OverlayMenu'
 import { useState } from 'react'
+import { NavbarMenu } from './NavbarMenu'
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -25,6 +26,7 @@ export const Navbar = () => {
         <Link href='/' className={styles.title}>
           allis matei
         </Link>
+        <NavbarMenu />
         <div className={styles.menuIcon} onClick={toggleMenu}>
           {!isOpen && <MenuIcon />}
           {isOpen && <CloseMenuIcon />}

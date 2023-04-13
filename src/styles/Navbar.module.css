@@ -11,6 +11,7 @@
 .title {
   color: black;
   font-size: 1.5rem;
+  /* font-family: 'Rubik Mono One', sans-serif; */
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -23,7 +24,7 @@
   .menuIcon {
     display: none;
   }
-  .navbar {
+  /* .navbar {
     justify-content: center;
-  }
+  } */
 }
