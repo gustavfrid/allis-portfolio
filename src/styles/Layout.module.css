@@ -11,23 +11,3 @@
   /* ↓ Wrap when the elements are of equal width */
   min-inline-size: 50%;
 }
-
-/* @keyframes animatedBackground {
-  0% {
-    transform: rotate(0deg) translate(-165px) rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg) translate(-165px) rotate(-360deg);
-  }
-}
-
-.background {
-  background-image: url(/background.jpg);
-  height: 300vh;
-  width: 400vh;
-  z-index: -1;
-  position: absolute;
-  top: -100vh;
-  left: -50vw;
-  animation: animatedBackground 500s linear infinite;
-} */

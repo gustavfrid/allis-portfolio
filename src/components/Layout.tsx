@@ -8,7 +8,7 @@ export const Layout = ({ children }: PropsWithChildren) => {
   return (
     <div>
       <div className={styles.background} />
-      <Navbar />
+
       <div className={styles.main}>
         <div className={styles.not_sidebar}>{children}</div>
       </div>

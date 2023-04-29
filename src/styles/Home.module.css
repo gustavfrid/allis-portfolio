@@ -27,3 +27,13 @@
 .cv > p {
   font-weight: bold;
 }
+
+.cv > a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cv > a:hover {
+  text-decoration: underline;
+}
