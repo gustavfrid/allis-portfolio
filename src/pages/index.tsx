@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import { Navbar } from '@/components/Navbar'
+import { ImageGrid } from '@/components/ImageGrid'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <main className={styles.main}>
         <h1>Allis Matei</h1>
         <div className={styles.description}>under uppbyggnad</div>
+        <ImageGrid />
       </main>
     </>
   )

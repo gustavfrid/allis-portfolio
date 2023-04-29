@@ -8,7 +8,7 @@ export default function AboutPage() {
       <Navbar />
       <div className={styles.main}>
         <h1>about</h1>
-        <p>I am a textile artist soon to be graduated from Konstfack Arts and Crafts</p>
+        <p>Textile artist recently graduated from Konstfack Arts and Crafts</p>
         <div className={styles.cv}>
           <h1>CV</h1>
           <h2>Utbildning</h2>
