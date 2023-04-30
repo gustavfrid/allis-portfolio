@@ -12,6 +12,7 @@
 
 .main > p {
   padding: 2rem;
+  font-weight: 600;
 }
 
 .social {

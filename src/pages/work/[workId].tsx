@@ -3,9 +3,10 @@ import { GetStaticProps } from 'next'
 import styles from '@/styles/Home.module.css'
 import { Navbar } from '@/components/Navbar'
 import data from 'data/workdata.json'
+import { Gallery } from '@/components/Gallery'
 
 interface PageDetailProps {
-  pageDetails: { name: string; heroImg: string; text: string }
+  pageDetails: { name: string; heroImg: string; text: string; gallery: [string] }
 }
 
 export default function WorkDetailPage({ pageDetails }: PageDetailProps) {
@@ -19,6 +20,7 @@ export default function WorkDetailPage({ pageDetails }: PageDetailProps) {
       <div className={styles.main}>
         <h1>{pageDetails.name}</h1>
         <p>{pageDetails.text}</p>
+        <Gallery imgs={pageDetails.gallery} />
       </div>
     </>
   )

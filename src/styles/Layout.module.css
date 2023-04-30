@@ -10,4 +10,5 @@
   flex-grow: 999;
   /* ↓ Wrap when the elements are of equal width */
   min-inline-size: 50%;
+  z-index: 2;
 }
