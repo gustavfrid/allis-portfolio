@@ -1,10 +1,11 @@
 .card {
   display: flex;
   flex-wrap: wrap;
-  width: 80vw;
+  width: 90vw;
   /* height: 200px; */
-  padding: 1rem;
+  /* padding: 10px; */
   box-sizing: border-box;
+  margin: 20px 0 5px 0;
 }
 
 .card:hover {
@@ -14,7 +15,7 @@
 .thumbnail {
   flex-basis: 20rem;
   flex-grow: 1;
-  min-height: 10rem;
+  min-height: 15rem;
   position: relative;
 }
 

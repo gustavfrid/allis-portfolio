@@ -1,15 +1,19 @@
 .grid {
   display: flex;
   flex-wrap: wrap;
+  /* flex-direction: column; */
   justify-content: center;
   margin: 1rem;
   gap: 1rem;
+  width: 90%;
 }
 
 .container {
   position: relative;
-  width: 20rem;
-  height: 20rem;
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  flex-basis: 40ch;
+  aspect-ratio: 4/3;
 }
 
 .overlay {
