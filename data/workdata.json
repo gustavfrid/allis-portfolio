@@ -3,20 +3,70 @@
     "name": "vårutställning",
     "heroImg": "IMG_7655.JPG",
     "text": "Vårutställning Konstfack 2023",
-    "gallery": ["IMG_7655.JPG", "IMG_7649.JPG"]
+    "gallery": [
+      { "src": "IMG_7655.JPG", "caption": "skog", "heroImg": true },
+      { "src": "IMG_7649.JPG", "caption": "skog", "heroImg": false }
+    ]
   },
   {
     "name": "virserum",
     "heroImg": "VirserumsKonsthall_knutar_4.jpg",
     "text": "Virserums konsthall projektet knutar",
     "gallery": [
-      "VirserumsKonsthall_knutar_1.jpg",
-      "VirserumsKonsthall_knutar_2.jpg",
-      "VirserumsKonsthall_knutar_3.jpg",
-      "VirserumsKonsthall_knutar_4.jpg",
-      "VirserumsKonsthall_knutar_5.jpg",
-      "VirserumsKonsthall_knutar_6.jpg",
-      "VirserumsKonsthall_knutar_7.jpg"
+      { "src": "VirserumsKonsthall_knutar_1.jpg", "caption": "skog", "heroImg": false },
+      { "src": "VirserumsKonsthall_knutar_2.jpg", "caption": "skog", "heroImg": false },
+      { "src": "VirserumsKonsthall_knutar_3.jpg", "caption": "skog", "heroImg": false },
+      { "src": "VirserumsKonsthall_knutar_4.jpg", "caption": "skog", "heroImg": true },
+      { "src": "VirserumsKonsthall_knutar_5.jpg", "caption": "skog", "heroImg": false },
+      { "src": "VirserumsKonsthall_knutar_7.jpg", "caption": "skog", "heroImg": false }
     ]
+  },
+  {
+    "name": "ett minne blått",
+    "heroImg": "Ett_minne_blatt_2021_02.jpg",
+    "text": "En upplaga om 5 st kviltar",
+    "gallery": [
+      { "src": "Ett_minne_blatt_2021_01.jpg", "caption": "Blå kvilt", "heroImg": false },
+      { "src": "Ett_minne_blatt_2021_02.jpg", "caption": "Blå kvilt", "heroImg": true }
+    ]
+  },
+  {
+    "name": "carpe diem",
+    "heroImg": "Carpe_Diem_5.jpg",
+    "text": "Satans demokrati",
+    "gallery": [
+      { "src": "Carpe_Diem_1.jpg", "caption": "", "heroImg": false },
+      { "src": "Carpe_Diem_2.jpg", "caption": "", "heroImg": false },
+      { "src": "Carpe_Diem_3.jpg", "caption": "", "heroImg": false },
+      { "src": "Carpe_Diem_4.jpg", "caption": "", "heroImg": false },
+      { "src": "Carpe_Diem_5.jpg", "caption": "", "heroImg": true }
+    ]
+  },
+  {
+    "name": "Radix",
+    "heroImg": "Radix_2018_13.jpeg",
+    "text": "Textil bok",
+    "gallery": [
+      { "src": "Radix_2018_3.jpg", "caption": "", "heroImg": false },
+      { "src": "Radix_2018_4.jpg", "caption": "", "heroImg": false },
+      { "src": "Radix_2018_5.jpg", "caption": "", "heroImg": false },
+      { "src": "Radix_2018_13.jpeg", "caption": "", "heroImg": true }
+    ]
+  },
+  {
+    "name": "Svarta rummet",
+    "heroImg": "Svarta rummet_03.jpg",
+    "text": "Satans demokrati",
+    "gallery": [
+      { "src": "Svarta rummet_02.jpg", "caption": "", "heroImg": false },
+      { "src": "Svarta rummet_03.jpg", "caption": "", "heroImg": true },
+      { "src": "Svarta rummet_07.jpg", "caption": "", "heroImg": false }
+    ]
+  },
+  {
+    "name": "underhunden",
+    "heroImg": "underhunden_1.jpg",
+    "text": "Kvrilt",
+    "gallery": [{ "src": "underhunden_1.jpg", "caption": "", "heroImg": true }]
   }
 ]

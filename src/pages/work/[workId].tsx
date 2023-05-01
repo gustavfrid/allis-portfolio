@@ -6,13 +6,17 @@ import data from 'data/workdata.json'
 import { Gallery } from '@/components/Gallery'
 
 interface PageDetailProps {
-  pageDetails: { name: string; heroImg: string; text: string; gallery: [string] }
+  pageDetails: {
+    name: string
+    heroImg: string
+    text: string
+    gallery: [{ src: string; caption: string; heroImg: boolean }]
+  }
 }
 
 export default function WorkDetailPage({ pageDetails }: PageDetailProps) {
   const router = useRouter()
   const workId = router.query.workId
-  console.log(pageDetails)
 
   return (
     <>

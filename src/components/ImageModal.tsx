@@ -9,12 +9,7 @@ interface ModalProps {
 export const ImageModal = ({ imgSrc, onClose }: ModalProps) => {
   return (
     <div className={styles.container} onClick={onClose}>
-      <Image
-        src={`/${imgSrc}`}
-        alt='Hero image'
-        fill
-        style={{ objectFit: 'contain', padding: '10px' }}
-      />
+      <Image src={`/${imgSrc}`} alt='Hero image' fill style={{ objectFit: 'contain' }} />
     </div>
   )
 }

@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { ImageModal } from './ImageModal'
 
 interface GalleryProps {
-  imgs: string[]
+  imgs: [{ src: string; caption: string; heroImg: boolean }]
 }
 
 export const Gallery = ({ imgs }: GalleryProps) => {
@@ -19,14 +19,20 @@ export const Gallery = ({ imgs }: GalleryProps) => {
       {modal != 'null' && <ImageModal imgSrc={modal} onClose={onClose} />}
       <div className={styles.gallery_container}>
         {imgs.map((img) => (
-          <div key={img} className={styles.image_container} onClick={() => setModal(img)}>
+          <div key={img.src} className={styles.image_container} onClick={() => setModal(img.src)}>
             <Image
-              src={`/${img}`}
+              src={`/${img.src}`}
               alt='image from exibition'
               width='0'
               height='0'
               sizes='100vw'
-              style={{ objectFit: 'contain', width: '100%', height: 'auto', maxWidth: '40vw' }}
+              style={{
+                objectFit: 'contain',
+                width: '100%',
+                height: 'auto',
+                maxWidth: '30vw',
+                minWidth: 'inherit',
+              }}
             />
           </div>
         ))}
