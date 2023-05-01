@@ -55,12 +55,12 @@
   },
   {
     "name": "Svarta rummet",
-    "heroImg": "Svarta rummet_03.jpg",
+    "heroImg": "Svarta_rummet_03.jpg",
     "text": "Satans demokrati",
     "gallery": [
-      { "src": "Svarta rummet_02.jpg", "caption": "", "heroImg": false },
-      { "src": "Svarta rummet_03.jpg", "caption": "", "heroImg": true },
-      { "src": "Svarta rummet_07.jpg", "caption": "", "heroImg": false }
+      { "src": "Svarta_rummet_02.jpg", "caption": "", "heroImg": false },
+      { "src": "Svarta_rummet_03.jpg", "caption": "", "heroImg": true },
+      { "src": "Svarta_rummet_07.jpg", "caption": "", "heroImg": false }
     ]
   },
   {
