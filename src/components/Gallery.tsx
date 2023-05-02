@@ -7,19 +7,57 @@ interface GalleryProps {
   imgs: [{ src: string; caption: string; heroImg: boolean }]
 }
 
+interface ModalProp {}
+
 export const Gallery = ({ imgs }: GalleryProps) => {
-  const [modal, setModal] = useState<string>('null')
+  const [currImgSrc, setCurrImgSrc] = useState<string>('null')
+  const [prevImgSrc, setPrevImgSrc] = useState<string>('null')
+  const [nextImgSrc, setNextImgSrc] = useState<string>('null')
 
   const onClose = () => {
-    setModal('null')
+    console.log('🚀 ~ file: Gallery.tsx:34 ~ onClose currImgSrc:', currImgSrc)
+    console.log('🚀 ~ file: Gallery.tsx:34 ~ onClose prevImgSrc:', prevImgSrc)
+    console.log('🚀 ~ file: Gallery.tsx:34 ~ onClose nextImgSrc:', nextImgSrc)
+
+    setCurrImgSrc('null')
+  }
+
+  const handleImageClick = (src: string) => {
+    setPrevImgSrc('null')
+    setNextImgSrc('null')
+    const imgIndex = imgs.findIndex((img) => img.src === src)
+    if (imgIndex > 0) {
+      const prevImgIndex = imgIndex - 1
+      setPrevImgSrc(imgs[prevImgIndex].src)
+    }
+    if (imgIndex + 1 < imgs.length) {
+      const nextImgIndex = imgIndex + 1
+      setNextImgSrc(imgs[nextImgIndex].src)
+    }
+
+    setCurrImgSrc(src)
+    console.log('🚀 ~ file: Gallery.tsx:34 ~ handleImageClick currImgSrc:', currImgSrc)
+    console.log('🚀 ~ file: Gallery.tsx:34 ~ handleImageClick prevImgSrc:', prevImgSrc)
+    console.log('🚀 ~ file: Gallery.tsx:34 ~ handleImageClick nextImgSrc:', nextImgSrc)
   }
 
   return (
     <>
-      {modal != 'null' && <ImageModal imgSrc={modal} onClose={onClose} />}
+      {currImgSrc != 'null' && (
+        <ImageModal
+          imgSrc={currImgSrc}
+          prevImgSrc={prevImgSrc}
+          nextImgSrc={nextImgSrc}
+          handleImageClick={handleImageClick}
+          onClose={onClose}
+        />
+      )}
       <div className={styles.gallery_container}>
         {imgs.map((img) => (
-          <div key={img.src} className={styles.image_container} onClick={() => setModal(img.src)}>
+          <div
+            key={img.src}
+            className={styles.image_container}
+            onClick={() => handleImageClick(img.src)}>
             <Image
               src={`/${img.src}`}
               alt='image from exibition'

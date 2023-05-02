@@ -11,3 +11,37 @@
   z-index: 900;
   font-weight: 600;
 }
+
+.button_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  /* background-color: aqua; */
+  z-index: 901;
+}
+
+.button {
+  height: 100%;
+  width: 10vw;
+  flex-grow: 1;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+  font-weight: 600;
+  font-size: 5rem;
+  border: none;
+}
+
+.button:hover {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.button_close {
+  height: 100%;
+  width: 80vw;
+  flex-grow: 8;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
