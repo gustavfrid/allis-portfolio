@@ -30,7 +30,6 @@ export const Gallery = ({ imgs }: GalleryProps) => {
                 objectFit: 'contain',
                 width: '100%',
                 height: 'auto',
-                maxWidth: '30vw',
                 minWidth: 'inherit',
               }}
             />
