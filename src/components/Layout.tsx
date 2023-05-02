@@ -1,14 +1,17 @@
 import { Navbar } from './Navbar'
-import { Sidebar } from './Sidebar'
+import styles from '@/styles/Layout.module.css'
+import bgImg from '@/images/background.jpg'
 
 import { PropsWithChildren } from 'react'
 
 export const Layout = ({ children }: PropsWithChildren) => {
   return (
-    <>
-      <Navbar />
-      {/* <Sidebar /> */}
-      {children}
-    </>
+    <div>
+      <div className={styles.background} />
+
+      <div className={styles.main}>
+        <div className={styles.not_sidebar}>{children}</div>
+      </div>
+    </div>
   )
 }

@@ -1,0 +1,47 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  justify-content: center;
+  margin: 1rem;
+  gap: 1rem;
+  width: 90%;
+}
+
+.container {
+  position: relative;
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  flex-basis: 40ch;
+  aspect-ratio: 4/3;
+}
+
+.overlay {
+  display: hidden;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.overlay > p {
+  display: none;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+
+.overlay:hover > p {
+  display: block;
+}
+
+.overlay:hover {
+  transition: 0.5s;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+}

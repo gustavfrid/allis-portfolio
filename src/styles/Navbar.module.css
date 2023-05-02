@@ -1,29 +1,26 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   padding: 1rem;
-  background-color: white;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  position: relative;
 }
 
 .title {
   color: black;
   font-size: 1.5rem;
+  font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .menuIcon {
-  z-index: 1000;
+  z-index: 10;
 }
 
 @media (min-width: 768px) {
   .menuIcon {
     display: none;
-  }
-  .navbar {
-    justify-content: center;
   }
 }
