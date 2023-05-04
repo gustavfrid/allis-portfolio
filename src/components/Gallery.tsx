@@ -15,10 +15,6 @@ export const Gallery = ({ imgs }: GalleryProps) => {
   const [nextImgSrc, setNextImgSrc] = useState<string>('null')
 
   const onClose = () => {
-    console.log('🚀 ~ file: Gallery.tsx:34 ~ onClose currImgSrc:', currImgSrc)
-    console.log('🚀 ~ file: Gallery.tsx:34 ~ onClose prevImgSrc:', prevImgSrc)
-    console.log('🚀 ~ file: Gallery.tsx:34 ~ onClose nextImgSrc:', nextImgSrc)
-
     setCurrImgSrc('null')
   }
 
@@ -36,9 +32,6 @@ export const Gallery = ({ imgs }: GalleryProps) => {
     }
 
     setCurrImgSrc(src)
-    console.log('🚀 ~ file: Gallery.tsx:34 ~ handleImageClick currImgSrc:', currImgSrc)
-    console.log('🚀 ~ file: Gallery.tsx:34 ~ handleImageClick prevImgSrc:', prevImgSrc)
-    console.log('🚀 ~ file: Gallery.tsx:34 ~ handleImageClick nextImgSrc:', nextImgSrc)
   }
 
   return (
