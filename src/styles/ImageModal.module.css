@@ -22,31 +22,34 @@
 }
 
 .button {
-  visibility: ;
-  height: 4rem;
-  width: 4rem;
+  height: 2.5rem;
+  width: 2.5rem;
   background-color: rgba(0, 0, 0, 0.4);
   color: rgba(255, 255, 255, 0.5);
-  font-size: 2rem;
+  font-size: 1.2rem;
   border: none;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   text-align: center;
   padding: 0;
 }
 
 .button:hover {
   background-color: rgba(0, 0, 0, 0.9);
+  /* height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+  border-radius: 1.5rem; */
 }
 
 .button_close {
-  height: 4rem;
-  width: 4rem;
+  height: 2.5rem;
+  width: 2.5rem;
   align-self: flex-end;
   background-color: rgba(0, 0, 0, 0.4);
   color: rgba(255, 255, 255, 0.5);
-  font-size: 2rem;
+  font-size: 1.2rem;
   border: none;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   text-align: center;
   padding: 0;
 }
