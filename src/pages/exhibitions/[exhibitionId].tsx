@@ -11,13 +11,14 @@ interface PageDetailProps {
     name: string
     heroImg: string
     text: string
+    exhibition: { id: string }
     gallery: [{ src: string; caption: string; heroImg: boolean }]
   }
 }
 
-export default function WorkDetailPage({ pageDetails }: PageDetailProps) {
+export default function ExhibitionDetailPage({ pageDetails }: PageDetailProps) {
   const router = useRouter()
-  const workId = router.query.workId
+  const exhibitionId = router.query.exhibitionId
 
   return (
     <>
@@ -33,8 +34,11 @@ export default function WorkDetailPage({ pageDetails }: PageDetailProps) {
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const { params } = context
-  const workId = params!.workId
-  const pageDetails = data.find((work) => work.id === workId)
+  if (!params) {
+    return { notFound: true }
+  }
+  const exhibitionId = params.exhibitionId
+  const pageDetails = data.find((work) => work.exhibition?.id === exhibitionId)
 
   if (!pageDetails) {
     return { notFound: true }
@@ -48,7 +52,9 @@ export const getStaticProps: GetStaticProps = async (context) => {
 }
 
 export const getStaticPaths = async () => {
-  const paths = data.map((work) => ({ params: { workId: work.id } }))
+  const paths = data
+    .filter((work) => work.exhibition !== undefined)
+    .map((work) => ({ params: { exhibitionId: work.exhibition!.id } }))
   return {
     paths,
     fallback: false,

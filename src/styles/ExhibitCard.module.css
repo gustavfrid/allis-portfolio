@@ -1,0 +1,37 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  box-sizing: border-box;
+  margin: 20px 0 5px 0;
+}
+
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail {
+  flex-basis: 20rem;
+  flex-grow: 1;
+  min-height: 15rem;
+  position: relative;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0;
+  flex-grow: 999;
+  /* ↓ Wrap when the elements are of equal width */
+  min-inline-size: 50%;
+  align-items: center;
+}
+
+.summary > h4 {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.summary > p {
+  font-weight: 600;
+}

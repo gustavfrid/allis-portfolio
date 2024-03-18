@@ -1,4 +1,4 @@
-import styles from '../styles/Card.module.css'
+import styles from '../styles/ExhibitCard.module.css'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 
@@ -9,11 +9,11 @@ interface CardProps {
   text: string
 }
 
-export const Card = ({ name, heroImg, text, id }: CardProps) => {
+export const ExhibitCard = ({ name, heroImg, text, id }: CardProps) => {
   const router = useRouter()
 
   return (
-    <div className={styles.card} onClick={() => router.push(`/work/${id}`)}>
+    <div className={styles.card} onClick={() => router.push(`/exhibitions/${id}`)}>
       <div className={styles.thumbnail}>
         <Image src={`/${heroImg}`} alt='Hero image' fill style={{ objectFit: 'cover' }} />
       </div>

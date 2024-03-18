@@ -1,1 +1,1 @@
-export const menu = ['work', 'about', 'contact']
+export const menu = ['work', 'exhibitions', 'about', 'contact']

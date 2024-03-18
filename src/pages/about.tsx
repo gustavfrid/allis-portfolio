@@ -17,10 +17,10 @@ export default function AboutPage() {
           <p>2010 - 2011 - Nyckelviksskolan, Allmän linje</p>
           <h2>Utställningar</h2>
 
-          <Link href={'/work/vårutställning'}>
+          <Link href={'/work/det-var-en-gang-i-tiden-skog'}>
             <p>2023 - maj - Vårutställning, Konstfack, Stockholm</p>
           </Link>
-          <Link href={'/work/virserum'}>
+          <Link href={'/work/lilla-lejonet'}>
             <p>2023 - Knutar, P.A.N.G virserumkonsthall, Virserum</p>
           </Link>
           <p>2023 - apr - Skärholmensvårsalong, FOLKs utställningsrum Ateljé SKHLM, stockholm</p>

@@ -11,7 +11,7 @@ export const ImageGrid = () => {
         <div
           className={styles.container}
           key={work.name}
-          onClick={() => router.push(`/work/${work.name}`)}>
+          onClick={() => router.push(`/work/${work.id}`)}>
           <div className={styles.overlay}>
             <p>{work.name}</p>
           </div>

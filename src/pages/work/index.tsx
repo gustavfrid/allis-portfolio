@@ -11,7 +11,7 @@ export default function WorkPage() {
       <div className={styles.main}>
         <h1>work</h1>
         {data.map((work) => (
-          <Card key={work.name} {...work} />
+          <Card key={work.id} {...work} />
         ))}
       </div>
     </>

@@ -1,8 +1,15 @@
 [
   {
-    "name": "vårutställning",
+    "name": "det var en gång i tiden skog",
+    "id": "det-var-en-gang-i-tiden-skog",
     "heroImg": "Vårutställning_03.jpg",
     "text": "Vårutställning Konstfack 2023",
+    "exhibition": {
+      "name": "Vårutställning Konstfack 2023",
+      "id": "varutstallning-konstfack-2023",
+      "location": "Konstfack",
+      "date": 202305
+    },
     "date": 202305,
     "gallery": [
       { "src": "Vårutställning_01.jpg", "caption": "skog", "heroImg": true },
@@ -14,9 +21,16 @@
     ]
   },
   {
-    "name": "virserum",
+    "name": "lilla lejonet",
+    "id": "lilla-lejonet",
     "heroImg": "VirserumsKonsthall_knutar_4.jpg",
     "text": "Virserums konsthall projektet knutar",
+    "exhibition": {
+      "name": "Virserums konsthall projektet knutar",
+      "id": "virserums-konsthall-projektet-knutar",
+      "location": "Virserums konsthall",
+      "date": 202301
+    },
     "date": 202301,
     "gallery": [
       { "src": "VirserumsKonsthall_knutar_1.jpg", "caption": "skog", "heroImg": false },
@@ -29,6 +43,7 @@
   },
   {
     "name": "ett minne blått",
+    "id": "ett-minne-blatt",
     "heroImg": "Ett_minne_blatt_2021_02.jpg",
     "text": "En upplaga om 5 st kviltar",
     "date": 202203,
@@ -39,13 +54,21 @@
   },
   {
     "name": "underhunden",
+    "id": "underhunden",
     "heroImg": "underhunden_1.jpg",
+    "exhibition": {
+      "name": "Underhunden",
+      "id": "underhunden-2022",
+      "location": "Skärholmens konsthall",
+      "date": 202204
+    },
     "date": 202204,
     "text": "Kvrilt",
     "gallery": [{ "src": "underhunden_1.jpg", "caption": "", "heroImg": true }]
   },
   {
     "name": "Radix",
+    "id": "radix",
     "heroImg": "Radix_2018_13.jpeg",
     "text": "Textil bok",
     "date": 201801,
@@ -58,6 +81,7 @@
   },
   {
     "name": "carpe diem",
+    "id": "carpe-diem",
     "heroImg": "Carpe_Diem_5.jpg",
     "text": "Satans demokrati",
     "date": 201701,
@@ -71,6 +95,7 @@
   },
   {
     "name": "Svarta rummet",
+    "id": "svarta-rummet",
     "heroImg": "Svarta_rummet_03.jpg",
     "text": "Satans demokrati",
     "date": 201601,
